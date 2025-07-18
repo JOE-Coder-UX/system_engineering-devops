@@ -1,11 +1,5 @@
 #!/usr/bin/env bash
 # Kill a process
 
-ids=$(pgrep -f 7-highlander)
-
-if [ -z "$ids" ]; then
-  echo "No matching process found."
-else
-  echo "Killing process(es): $ids"
-  kill -9 "$ids"
-fi
+id="$(pgrep -f 7-highlander)"
+kill -9 "$id"
