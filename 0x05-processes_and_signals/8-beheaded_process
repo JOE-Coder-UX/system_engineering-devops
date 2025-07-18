@@ -7,5 +7,5 @@ if [ -z "$ids" ]; then
   echo "No matching process found."
 else
   echo "Killing process(es): $ids"
-  kill -9 $ids
+  kill -9 "$ids"
 fi
